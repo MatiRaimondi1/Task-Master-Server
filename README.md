@@ -1,8 +1,9 @@
 # 🚀 TaskMaster Pro - Backend API
 
 ## 🌐 Live Demo & Frontend
-* **Live Application:** [🚀 View Live Demo](https://your-frontend-link.vercel.app) *(Placeholder)*
-* **Frontend Repository:** [🖥️ TaskMaster Pro Frontend](https://github.com/your-username/taskmaster-frontend) *(Placeholder)*
+* **Live Application:** [🚀 View Live Demo](https://tm-private.vercel.app)
+  (If the site doesn't load wait until the server starts again, this is a free host after all.) 
+* **Frontend Repository:** [🖥️ TaskMaster Pro Frontend](https://github.com/MatiRaimondi1/Task-Master-Client)
 
 ---
 
@@ -71,8 +72,8 @@ MAILTRAP_TOKEN=your_mailtrap_token
 
 1. **Clone the repository:**
 ```bash
-git clone [https://github.com/your-username/taskmaster-backend.git](https://github.com/your-username/taskmaster-backend.git)
-cd taskmaster-backend
+git clone https://github.com/MatiRaimondi1/Task-Master-Server.git
+cd task-master-server
 
 ```
 
