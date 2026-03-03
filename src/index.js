@@ -20,7 +20,7 @@ mongoose.connect(process.env.MONGO_URI, clientOptions)
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/tasks', require('./routes/taskRoutes'));
 
-const PORT = process.env.PORT || 3000;
+const PORT = Number(process.env.PORT) || 3000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
