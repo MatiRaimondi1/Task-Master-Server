@@ -13,7 +13,7 @@
 * **Database:** MongoDB (via MongoDB Atlas)
 * **ODM:** Mongoose
 * **Authentication:** JSON Web Tokens (JWT) & Bcrypt.js
-* **Email Service:** Nodemailer (SMTP Integration)
+* **Email Service:** Mailtrap
 * **Validation & Security:** CORS, Dotenv, Express-validator
 
 ---
@@ -63,6 +63,7 @@ PORT=3000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_super_secret_key
 MAILTRAP_TOKEN=your_mailtrap_token
+```
 
 ---
 
