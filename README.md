@@ -1,13 +1,13 @@
-# 🚀 TaskMaster Pro - Backend API
+# TaskMaster Pro - Backend API
 
-## 🌐 Live Demo & Frontend
-* **Live Application:** [🚀 View Live Demo](https://tm-private.vercel.app)
+##  Live Demo & Frontend
+* **Live Application:** [View Live Demo](https://tm-private.vercel.app)
   (If the site doesn't load wait until the server starts again, this is a free host after all.) 
-* **Frontend Repository:** [🖥️ TaskMaster Pro Frontend](https://github.com/MatiRaimondi1/Task-Master-Client)
+* **Frontend Repository:** [TaskMaster Pro Frontend](https://github.com/MatiRaimondi1/Task-Master-Client)
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **Runtime:** Node.js (v18+)
 * **Framework:** Express.js
@@ -19,23 +19,22 @@
 
 ---
 
-## ✨ Key Technical Features
+## Technical Features
 
-### 🔐 Advanced Authentication Flow
-Unlike standard Todo apps, this API implements a **Production-Ready Auth Flow**:
+### Advanced Authentication Flow
 1.  **Secure Registration:** Passwords are encrypted using Salted Hashing (Bcrypt).
 2.  **Email Verification:** Generates a unique 6-digit code sent via SMTP to the user's email.
 3.  **Account Status Control:** Users are blocked from logging in until their email is verified (`isVerified: true`).
 4.  **Resend Logic:** Smart endpoint to resend verification codes if they expire or get lost.
 
-### 📋 Task Management
+### Task Management
 * Full CRUD (Create, Read, Update, Delete) operations.
 * Priority-based filtering and status tracking.
 * Ownership middleware: Users can only access or modify their own data.
 
 ---
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### Authentication
 | Method | Endpoint | Description |
@@ -55,7 +54,7 @@ Unlike standard Todo apps, this API implements a **Production-Ready Auth Flow**:
 
 ---
 
-## ⚙️ Environment Variables
+## Environment Variables
 
 To run this project, you will need to add the following variables to your `.env` file:
 
@@ -68,7 +67,7 @@ MAILTRAP_TOKEN=your_mailtrap_token
 
 ---
 
-## 🚀 Local Setup
+## Local Setup
 
 1. **Clone the repository:**
 ```bash
@@ -93,6 +92,6 @@ npm run start
 
 ```
 
-## 📝 License
+## License
 
 This project is part of my Fullstack Developer Portfolio. Feel free to use it for inspiration!
