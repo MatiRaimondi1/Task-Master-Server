@@ -91,7 +91,3 @@ Create a `.env` file in the root directory and fill in your credentials.
 npm run start
 
 ```
-
-## License
-
-This project is part of my Fullstack Developer Portfolio. Feel free to use it for inspiration!
