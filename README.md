@@ -3,7 +3,7 @@
 ---
 
 ##  Live Demo & Frontend
-* **Live Application:** [View Live Demo](https://tm-private.vercel.app)
+* **Live Application:** [View Live Demo](https://task-master-client-sigma.vercel.app/)
   (If the site doesn't load wait until the server starts again, this is a free host after all.) 
 * **Frontend Repository:** [TaskMaster Pro Frontend](https://github.com/MatiRaimondi1/Task-Master-Client)
 
