@@ -1,5 +1,10 @@
 const Task = require('../models/Task');
 
+/**
+ * Fetches all tasks for the authenticated user
+ * @param {*} req 
+ * @param {*} res 
+ */
 exports.getTasks = async (req, res) => {
     try {
         const tasks = await Task.find({ user: req.user.id }).sort({ createdAt: -1 });
@@ -9,6 +14,11 @@ exports.getTasks = async (req, res) => {
     }
 };
 
+/**
+ * Creates a new task for the authenticated user
+ * @param {*} req 
+ * @param {*} res 
+ */
 exports.createTask = async (req, res) => {
     try {
         const newTask = new Task({
@@ -22,6 +32,12 @@ exports.createTask = async (req, res) => {
     }
 };
 
+/**
+ * Updates an existing task for the authenticated user
+ * @param {*} req 
+ * @param {*} res 
+ * @returns 
+ */
 exports.updateTask = async (req, res) => {
     try {
         const updatedTask = await Task.findOneAndUpdate(
@@ -40,6 +56,12 @@ exports.updateTask = async (req, res) => {
     }
 };
 
+/**
+ * Deletes an existing task for the authenticated user
+ * @param {*} req 
+ * @param {*} res 
+ * @returns 
+ */
 exports.deleteTask = async (req, res) => {
     try {
         const deletedTask = await Task.findOneAndDelete({ 

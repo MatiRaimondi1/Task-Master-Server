@@ -3,6 +3,12 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const { sendVerificationEmail } = require('../utils/mailer');
 
+/**
+ * Registers a new user
+ * @param {*} req 
+ * @param {*} res 
+ * @returns 
+ */
 exports.register = async (req, res) => {
     try {
         const { name, email, password } = req.body;
@@ -30,6 +36,12 @@ exports.register = async (req, res) => {
     }
 };
 
+/**
+ * Verifies a user's email address
+ * @param {*} req 
+ * @param {*} res 
+ * @returns 
+ */
 exports.verify = async (req, res) => {
     try {
         const { email, code } = req.body;
@@ -56,6 +68,12 @@ exports.verify = async (req, res) => {
     }
 };
 
+/**
+ * Logs in a user
+ * @param {*} req 
+ * @param {*} res 
+ * @returns 
+ */
 exports.login = async (req, res) => {
     try {
         const { email, password } = req.body;
@@ -88,6 +106,12 @@ exports.login = async (req, res) => {
     }
 };
 
+/**
+ * Resends a verification code to a user's email
+ * @param {*} req 
+ * @param {*} res 
+ * @returns 
+ */
 exports.resendCode = async (req, res) => {
     try {
         const { email } = req.body;

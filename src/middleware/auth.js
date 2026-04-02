@@ -1,5 +1,12 @@
 const jwt = require('jsonwebtoken');
 
+/**
+ * Authenticates a user based on a JWT token
+ * @param {*} req 
+ * @param {*} res 
+ * @param {*} next 
+ * @returns 
+ */
 module.exports = function (req, res, next) {
     const token = req.header('Authorization')?.split(' ')[1] || req.header('x-auth-token');
 

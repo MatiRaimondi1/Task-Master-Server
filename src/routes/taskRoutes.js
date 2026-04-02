@@ -3,6 +3,9 @@ const router = express.Router();
 const taskController = require('../controllers/taskController');
 const auth = require('../middleware/auth');
 
+/**
+ * Task routes for handling task-related operations
+ */
 router.get('/', auth, taskController.getTasks);
 router.post('/', auth, taskController.createTask);
 router.put('/:id', auth, taskController.updateTask);

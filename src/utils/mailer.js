@@ -1,14 +1,25 @@
 const { MailtrapClient } = require("mailtrap");
 
+/**
+ * Initializes the Mailtrap client
+ */
 const client = new MailtrapClient({
   token: process.env.MAILTRAP_TOKEN,
 });
 
+/**
+ * Defines the sender information for the verification emails
+ */
 const sender = {
   email: "hello@demomailtrap.co",
   name: "Mailtrap Test",
 };
 
+/**
+ * Sends a verification email to a user
+ * @param {*} email 
+ * @param {*} code 
+ */
 const sendVerificationEmail = async (email, code) => {
     await client.send({
         from: sender,
